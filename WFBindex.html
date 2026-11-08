@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Field Bio Quiz App</title>
+  <link rel="stylesheet" href="WFBstyles.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+  <div class="container">
+    <h2><img src='VTLogo.png' alt='VT Logo'> FIW 2324 </h2>
+    <h1> Wildlife Field Bio Quiz <img src='SalamanderIcon.png' alt='Leaf Icon' class='smallImage'></h1>
+    <img id="speciesImage" src="" alt="Species" class="image hide">
+    
+    <div id="quiz"></div>
+    <div id="correct"></div>
+    <div id="result" class="result"></div>
+    <div id="checkBox" class="checkbox"></div>
+    
+    <input id="speciesID" type="text" class="input hide"></input>
+    
+    <button id="deselectAll" class="button grey">Deselect All</button>
+    <button id="selectAll" class="button grey">Select All</button>
+
+    <button id="start" class="importantButton">Start</button>
+    <button id="submit" class="importantButton hide">Submit</button>
+
+    <input id="latinName" type="text" class="input hide"></input>
+
+    <button id="spacer" class="spacer hide"></button>
+
+    <button id="secondSubmit" class="importantButton hide">Submit</button>
+    <button id="retry" class="importantButton hide">Retry</button>
+    <button id="showAnswer" class="button center hide">Show Incorrect Answers</button>
+    <button id="next" class="button hide grey">Next</button>
+    <button id="backout" class="button hide right red">Return to Home</button>
+  </div>
+  <script src="WFBscript.js"></script>
+</body>
+</html>
