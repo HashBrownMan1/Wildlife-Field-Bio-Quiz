@@ -1417,7 +1417,7 @@ function checkFirstAnswer() {
     isCorrect.innerHTML = 'Incorrect';
     isGivenAnswerCorrect = 0;
 
-    correctionText += `Correct answer is <b>${quizData[currentQuestion].commonName}</b><br>`;
+    correctionText += `Correct answer is <b>${quizData[currentQuestion].commonName}</b> <dfn data-title='${quizData[currentQuestion].latinName}'><img id='?Icon' src='QuestionMarkIcon.png' alt='' class='smallestImage'></dfn><br>`;
 
 
   }
@@ -1478,7 +1478,7 @@ function checkSecondAnswer() {
   const isCorrect = document.createElement('div');
   const correction = document.createElement('div');
   correction.className = 'options';
-  correction.innerHTML = `Correct answer is <b>${current.latinName}</b><br>Translation: <b>${quizData[currentQuestion].latinNameTranslation}</b>`;
+  correction.innerHTML = `Correct answer is <b>${current.latinName}</b> <dfn data-title='${current.rootWords}\n(${current.rootTranslation})\n'><img id='?Icon' src='QuestionMarkIcon.png' alt='' class='smallestImage'></dfn><br>Translation: <b>${quizData[currentQuestion].latinNameTranslation}</b>`;
 
   wasSkipped = !normalize(input);
   const inputForDisplay = wasSkipped ? skipped : input;
