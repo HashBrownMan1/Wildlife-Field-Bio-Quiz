@@ -1274,7 +1274,7 @@ function shuffleQuestions() {
 }
 
 function setImageID(questionNum, rand, num) {
-  idName = quizResetData[questionNum].commonName.replace(/[\s'-]/g, "");
+  idName = quizData[questionNum].commonName.replace(/[\s'-]/g, "");
 
   if (rand == true){
     idNum = Math.floor(Math.random() * 3) + 1;
