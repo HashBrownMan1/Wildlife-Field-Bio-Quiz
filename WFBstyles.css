@@ -152,7 +152,7 @@ hr {
 }
 
 .groupHeader:hover {
-  transform: scale(1.03);
+  transform: scale(1.01);
   font-weight: 800;
 }
 

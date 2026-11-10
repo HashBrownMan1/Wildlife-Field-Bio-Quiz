@@ -1609,29 +1609,54 @@ function showAnswer() {
   const potentialScore = quizData.length * 2;
   const percentage = Math.round((score/potentialScore) *100);
 
-  let incorrectAnswersHtml = '';
-
-  if (incorrectAnswers.length>0){
-    for (let i = 0; i < incorrectAnswers.length; i++) {
-      incorrectAnswersHtml += `
-        <p>
-          ${incorrectAnswers[i].textSpacer}
-          <span class="${incorrectAnswers[i].isClose}"><strong>Question ${incorrectAnswers[i].questionNumber}:</strong></span><i>${incorrectAnswers[i].image}</i> <br>
-          Your Answer: ${incorrectAnswers[i].didSkip ? `${incorrectAnswers[i].incorrectAnswer}` : `<b>${incorrectAnswers[i].incorrectAnswer}</b>`}<br>
-          Correct Answer: <b>${incorrectAnswers[i].correctAnswer}</b>
-        </p>
-      `;
-    }
-  } else {
-    incorrectAnswersHtml += `<span class="rightAnswer">None!</span>`;
-  }
-
   resultContainer.innerHTML = `
     <p><b>${percentage}%</b></p>
     <p>You scored ${score} out of ${potentialScore}!</p>
     <p>Incorrect Answers:</p>
-    ${incorrectAnswersHtml}
   `;
+
+  if (incorrectAnswers.length > 0) {
+    incorrectAnswers.forEach(item => {
+      resultContainer.appendChild(createReviewItem(item));
+    });
+  } else {
+    resultContainer.insertAdjacentHTML('beforeend', `<span class="rightAnswer">None!</span>`);
+  }
+}
+
+function createReviewItem(item) {
+  const section = document.createElement('div');
+
+  const header = document.createElement('div');
+  header.className = 'groupHeader';
+
+  const arrow = document.createElement('span');
+  arrow.className = 'groupArrow';
+
+  const title = document.createElement('span');
+  const label = item.isQuestionOne ? 'Species ID' : 'Latin name';
+  title.innerHTML = ` <span class="${item.isClose}"><strong>Question ${item.questionNumber}:</strong></span> ${label}`;
+
+  const body = document.createElement('div');
+  body.className = 'groupBody';
+  body.style.display = 'none';                       // starts collapsed
+  body.innerHTML = `
+    <i>${item.image}</i><br>
+    Your Answer: ${item.didSkip ? item.incorrectAnswer : `<b>${item.incorrectAnswer}</b>`}<br>
+    Correct Answer: <b>${item.correctAnswer}</b>
+  `;
+
+  header.addEventListener('click', () => {
+    const opening = body.style.display === 'none';
+    body.style.display = opening ? 'block' : 'none';
+    arrow.classList.toggle('open', opening);
+  });
+
+  header.appendChild(arrow);
+  header.appendChild(title);
+  section.appendChild(header);
+  section.appendChild(body);
+  return section;
 }
 
 submitButton.addEventListener('click', checkFirstAnswer);
