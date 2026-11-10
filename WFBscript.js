@@ -1567,6 +1567,8 @@ function displayResult() {
   submitButton.style.display = 'none';
   retryButton.style.display = 'inline-block';
   showAnswerButton.style.display = 'block';
+  score = Math.round(score * 100) / 100;
+
   const potentialScore = quizData.length * 2;
   const percentage = Math.round((score/potentialScore) *100);
 
