@@ -1392,6 +1392,7 @@ function checkFirstAnswer() {
       isQuestionOne: true,
       questionNumber: currentQuestionDisplay +0.1,
       correctAnswer: quizData[currentQuestion].commonName,
+      commonName: current.commonName,
       image:  ` Species ID -    <img id='speciesImage' src='${imageID}'' alt='Species Image' class='smallImage'>`,
       incorrectAnswer: inputForDisplay,
       isClose: 'closeAnswer',
@@ -1406,6 +1407,7 @@ function checkFirstAnswer() {
       isQuestionOne: true,
       questionNumber: currentQuestionDisplay +0.1,
       correctAnswer: quizData[currentQuestion].commonName,
+      commonName: current.commonName,
       image:  ` Species ID -    <img id='speciesImage' src='${imageID}'' alt='Species Image' class='smallImage'>`,
       incorrectAnswer: inputForDisplay,
       isClose: 'wrongAnswer',
@@ -1512,6 +1514,7 @@ function checkSecondAnswer() {
       incorrectAnswer: inputForDisplay,
       questionNumber: currentQuestionDisplay + 0.2,
       correctAnswer: current.latinName,
+      commonName: current.commonName,
       image: label,
       isClose: isPartial ? 'closeAnswer' : 'wrongAnswer',
     });
@@ -1637,6 +1640,7 @@ function createReviewItem(item) {
 
   const title = document.createElement('span');
   const label = item.isQuestionOne ? 'Species ID' : 'Latin name';
+  label += ` ${item.commonName}`
   title.innerHTML = ` <span class="${item.isClose}"><strong>Question ${item.questionNumber}:</strong></span> ${label}`;
 
   const body = document.createElement('div');
