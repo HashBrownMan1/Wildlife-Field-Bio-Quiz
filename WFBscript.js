@@ -1645,7 +1645,7 @@ function createReviewItem(item) {
   body.innerHTML = `
     <i>${item.image}</i><br>
     Your Answer: ${item.didSkip ? item.incorrectAnswer : `<b>${item.incorrectAnswer}</b>`}<br>
-    Correct Answer: <b>${item.correctAnswer}</b>
+    Correct Answer: <b>${item.correctAnswer}<br></b>
   `;
 
   header.addEventListener('click', () => {
