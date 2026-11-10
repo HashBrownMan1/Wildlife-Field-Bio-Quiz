@@ -1518,8 +1518,13 @@ function checkSecondAnswer() {
 
     if (isPartial) {
       isCorrect.className = 'closeAnswer';
-      isCorrect.innerHTML = `<b>Close! +0.5</b> (${matches}/${total} words correct)`;
-      score += 0.5;
+      if (matches == 1) {
+        isCorrect.innerHTML = `<b>Close! +0.33</b> (${matches}/${total} words correct)`;
+        score += 0.33;
+      } else{
+        isCorrect.innerHTML = `<b>Close! +0.66</b> (${matches}/${total} words correct)`;
+        score += 0.66;
+      }
     } else {
       isCorrect.className = 'wrongAnswer';
       isCorrect.innerHTML = 'Incorrect';
