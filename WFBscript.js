@@ -930,15 +930,403 @@ let quizData = [
     rootTranslation: 'lizard shield-leg six-lined',
     latinNameTranslation: 'shield-legged six-lined Lizard',
   },
+  /*Eastern Screech Owl*/{
+    commonName: 'Eastern Screech Owl',
+    acceptableNames: ['Eastern Screech','Eastern Screecher','Common Screech Owl'],
+    similarSpecies: ['Barred Owl','Barn Owl'],
+    latinName: 'Strigidae Megascops asio',
+    rootWords: 'strīg mégas-skṓps asiō',
+    rootTranslation: 'owl great-scops-owl horned-owl',
+    latinNameTranslation: 'Great horned scops-owl',
+  },
+  /*Barred Owl*/{
+    commonName: 'Barred Owl',
+    acceptableNames: ['Northern Barred Owl'],
+    similarSpecies: ['Eastern Screech Owl','Barn Owl'],
+    latinName: 'Strigidae Strix varia',
+    rootWords: 'strīg strīx vāria',
+    rootTranslation: 'owl owl variegated',
+    latinNameTranslation: 'variegated owl',
+  },
+  /*Barn Owl*/{
+    commonName: 'Barn Owl',
+    acceptableNames: [''],
+    similarSpecies: ['Eastern Screech Owl','Barred Owl'],
+    latinName: 'Tytonidae Tyto alba',
+    rootWords: 'tytōn tytō alba',
+    rootTranslation: 'owl owl white',
+    latinNameTranslation: 'white owl',
+  },
+  /*Osprey*/{
+    commonName: 'Osprey',
+    acceptableNames: [''],
+    similarSpecies: ['Red-tailed Hawk','Peregine Falcon'],
+    latinName: 'Pandionidae Pandion haliaetus',
+    rootWords: 'pandíōn pandíōn háls-aetós',
+    rootTranslation: 'pandion pandion sea-eagle',
+    latinNameTranslation: 'pandions sea eagle',
+  },
+  /*Coopers Hawk*/{
+    commonName: 'Coopers Hawk',
+    acceptableNames: [''],
+    similarSpecies: ['Red-tailed hawk','peregrine falcon'],
+    latinName: 'Accipitridae Accipiter cooperii',
+    rootWords: 'accipiter accipiter cooper',
+    rootTranslation: 'hawk hawk cooper',
+    latinNameTranslation: 'coopers hawk',
+  },
+  /*Red-tailed Hawk*/{
+    commonName: 'Red-tailed Hawk',
+    acceptableNames: ['Red-tail hawk'],
+    similarSpecies: ['Osprey','Peregine Falcon','Coopers Hawk'],
+    latinName: 'Accipitridae Buteo jamaicensis',
+    rootWords: 'accipiter būteō jamaica',
+    rootTranslation: 'hawk buzzard jamaica',
+    latinNameTranslation: 'jamaican buzzard',
+  },
+  /*Bald Eagle*/{
+    commonName: 'Bald Eagle',
+    acceptableNames: [''],
+    similarSpecies: [''],
+    latinName: 'Accipitridae Haliaeetus leucocephalus',
+    rootWords: 'accipiter haliáetos leukós-kephalḗ',
+    rootTranslation: 'hawk sea-eagle white-head',
+    latinNameTranslation: 'white headed sea-eagle',
+  },
+  /*Peregrine Falcon*/{
+    commonName: 'Peregrine Falcon',
+    acceptableNames: ['Peregrine','Duck Hawk'],
+    similarSpecies: ['American Kestrel','Swallow-tailed Kite'],
+    latinName: 'Falconidae Falco peregrinus',
+    rootWords: 'falcō falcō peregrīnus',
+    rootTranslation: 'falcon falcon wandering',
+    latinNameTranslation: 'wandering falcon',
+  },
+  /*American Kestrel*/{
+    commonName: 'American Kestrel',
+    acceptableNames: ['Kestrel','Sparrow Hawk'],
+    similarSpecies: ['Peregrine Falcon','Coopers Hawk'],
+    latinName: 'Falconidae Falco sparverius',
+    rootWords: 'falcō falcō sparvārius',
+    rootTranslation: 'falcon falcon of-sparrows',
+    latinNameTranslation: 'sparrow falcon',
+  },
+  /*Great Blue Heron*/{
+    commonName: 'Great Blue Heron',
+    acceptableNames: ['Blue Heron'],
+    similarSpecies: ['Bald Eagle','Osprey'],
+    latinName: 'Ardeidae Ardea herodias',
+    rootWords: 'ardea ardea hērōdiās',
+    rootTranslation: 'heron heron heron',
+    latinNameTranslation: 'heron heron',
+  },
+  /*Wood Duck*/{
+    commonName: 'Wood Duck',
+    acceptableNames: ['Carolina Duck'],
+    similarSpecies: ['Hooded Merganser','Mallard'],
+    latinName: 'Anatidae Aix sponsa',
+    rootWords: 'anas aix sponsa',
+    rootTranslation: 'duck diving-bird bride',
+    latinNameTranslation: 'bride diving-duck',
+  },
+  /*Hooded Merganser*/{
+    commonName: 'Hooded Merganser',
+    acceptableNames: ['Hooded Merg'],
+    similarSpecies: ['Wood Duck','Ring-necked Duck'],
+    latinName: 'Anatidae Lophodytes cucullatus',
+    rootWords: 'anas lóphos dýtēs cucullātus',
+    rootTranslation: 'duck crest diver hooded',
+    latinNameTranslation: 'hooded crested-diver',
+  },
+  /*Ring-necked Duck*/{
+    commonName: 'Ring-necked Duck',
+    acceptableNames: ['Ringneck','Ring necked Duck'],
+    similarSpecies: ['Hooded Merganser','Mallard'],
+    latinName: 'Anatidae Aythya collaris',
+    rootWords: 'anas aithuia collāris',
+    rootTranslation: 'duck seabird collared',
+    latinNameTranslation: 'collared seabird',
+  },
+  /*American Black Duck*/{
+    commonName: 'American Black Duck',
+    acceptableNames: ['Black Duck'],
+    similarSpecies: ['Mallard','Ring-necked Duck'],
+    latinName: 'Anatidae Anas rubripes',
+    rootWords: 'anas anas ruber pēs',
+    rootTranslation: 'duck duck red foot',
+    latinNameTranslation: 'red-footed duck',
+  },
+  /*Mallard*/{
+    commonName: 'Mallard',
+    acceptableNames: ['Mallard Duck'],
+    similarSpecies: ['American Black Duck','Wood Duck'],
+    latinName: 'Anatidae Anas platyrhynchos',
+    rootWords: 'anas anas platús rhýnchos',
+    rootTranslation: 'duck duck flat beak',
+    latinNameTranslation: 'flat-billed duck',
+  },
+  /*Pileated Woodpecker*/{
+    commonName: 'Pileated Woodpecker',
+    acceptableNames: ['Pileated'],
+    similarSpecies: ['Red-bellied Woodpecker','Northern Flicker'],
+    latinName: 'Picidae Dryocopus pileatus',
+    rootWords: 'pīcus drûs kópos pileātus',
+    rootTranslation: 'woodpecker tree striker capped',
+    latinNameTranslation: 'capped tree-striker',
+  },
+  /*Northern Flicker*/{
+    commonName: 'Northern Flicker',
+    acceptableNames: ['Flicker','Yellow-shafted Flicker'],
+    similarSpecies: ['Red-bellied Woodpecker','Pileated Woodpecker'],
+    latinName: 'Picidae Colaptes auratus',
+    rootWords: 'pīcus kolaptō aurātus',
+    rootTranslation: 'woodpecker to-peck golden',
+    latinNameTranslation: 'golden pecker',
+  },
+  /*Downy Woodpecker*/{
+    commonName: 'Downy Woodpecker',
+    acceptableNames: ['Downy'],
+    similarSpecies: ['Red-bellied Woodpecker','Northern Flicker'],
+    latinName: 'Picidae Dryobates pubescens',
+    rootWords: 'pīcus drûs bátēs pūbēscēns',
+    rootTranslation: 'woodpecker tree walker downy',
+    latinNameTranslation: 'downy tree-walker',
+  },
+  /*Red-bellied Woodpecker*/{
+    commonName: 'Red-bellied Woodpecker',
+    acceptableNames: ['Red bellied Woodpecker'],
+    similarSpecies: ['Downy Woodpecker','Northern Flicker'],
+    latinName: 'Picidae Melanerpes carolinus',
+    rootWords: 'pīcus mélās herpēs Carolīna',
+    rootTranslation: 'woodpecker black creeper Carolina',
+    latinNameTranslation: 'black creeper of Carolina',
+  },
+  /*Acadian Flycatcher*/{
+    commonName: 'Acadian Flycatcher',
+    acceptableNames: ['Acadian'],
+    similarSpecies: ['Red-eyed Vireo','Carolina Chickadee'],
+    latinName: 'Tyrannidae Empidonax virescens',
+    rootWords: 'tyrannus empís ánax virēscēns',
+    rootTranslation: 'tyrant gnat king greenish',
+    latinNameTranslation: 'greenish gnat-king',
+  },
+  /*Loggerhead Shrike*/{
+    commonName: 'Loggerhead Shrike',
+    acceptableNames: ['Shrike','Butcher Bird'],
+    similarSpecies: ['Northern Mockingbird','Gray Catbird'],
+    latinName: 'Laniidae Lanius ludovicianus',
+    rootWords: 'lanius lanius Lūdovīcus',
+    rootTranslation: 'butcher butcher Louis',
+    latinNameTranslation: 'butcher of Louisiana',
+  },
+  /*Red-eyed Vireo*/{
+    commonName: 'Red-eyed Vireo',
+    acceptableNames: ['Red eyed Vireo','Vireo'],
+    similarSpecies: ['Acadian Flycatcher','Hooded Warbler'],
+    latinName: 'Vireonidae Vireo olivaceus',
+    rootWords: 'vireō vireō olīva',
+    rootTranslation: 'green-bird green-bird olive',
+    latinNameTranslation: 'olive-colored green-bird',
+  },
+  /*American Crow*/{
+    commonName: 'American Crow',
+    acceptableNames: ['Crow','Common Crow'],
+    similarSpecies: ['Common Raven','Purple Martin'],
+    latinName: 'Corvidae Corvus brachyrhynchos',
+    rootWords: 'corvus corvus brachýs rhýnchos',
+    rootTranslation: 'raven raven short beak',
+    latinNameTranslation: 'short-billed raven',
+  },
+  /*Common Raven*/{
+    commonName: 'Common Raven',
+    acceptableNames: ['Raven','Northern Raven'],
+    similarSpecies: ['American Crow','Purple Martin'],
+    latinName: 'Corvidae Corvus corax',
+    rootWords: 'corvus corvus kórax',
+    rootTranslation: 'raven raven raven',
+    latinNameTranslation: 'raven raven',
+  },
+  /*Purple Martin*/{
+    commonName: 'Purple Martin',
+    acceptableNames: ['Martin'],
+    similarSpecies: ['American Crow','Red-winged Blackbird'],
+    latinName: 'Hirundinidae Progne subis',
+    rootWords: 'hirundō Próknē subis',
+    rootTranslation: 'swallow Procne subis-bird',
+    latinNameTranslation: 'Procne the swallow, subis-bird',
+  },
+  /*Tufted Titmouse*/{
+    commonName: 'Tufted Titmouse',
+    acceptableNames: ['Titmouse','Tufted Tit'],
+    similarSpecies: ['Carolina Chickadee','White-breasted Nuthatch'],
+    latinName: 'Paridae Baeolophus bicolor',
+    rootWords: 'parus baiós lóphos bis color',
+    rootTranslation: 'tit small crest two color',
+    latinNameTranslation: 'two-colored small-crest',
+  },
+  /*Carolina Chickadee*/{
+    commonName: 'Carolina Chickadee',
+    acceptableNames: ['Chickadee'],
+    similarSpecies: ['Tufted Titmouse','Red-breasted Nuthatch'],
+    latinName: 'Paridae Poecile carolinensis',
+    rootWords: 'parus poikílos Carolīna',
+    rootTranslation: 'tit varied Carolina',
+    latinNameTranslation: 'varied one of Carolina',
+  },
+  /*White-breasted Nuthatch*/{
+    commonName: 'White-breasted Nuthatch',
+    acceptableNames: ['White breasted Nuthatch'],
+    similarSpecies: ['Red-breasted Nuthatch','Carolina Chickadee'],
+    latinName: 'Sittidae Sitta carolinensis',
+    rootWords: 'sittē sittē Carolīna',
+    rootTranslation: 'nuthatch nuthatch Carolina',
+    latinNameTranslation: 'nuthatch of Carolina',
+  },
+  /*Red-breasted Nuthatch*/{
+    commonName: 'Red-breasted Nuthatch',
+    acceptableNames: ['Red breasted Nuthatch'],
+    similarSpecies: ['White-breasted Nuthatch','Carolina Chickadee'],
+    latinName: 'Sittidae Sitta canadensis',
+    rootWords: 'sittē sittē Canada',
+    rootTranslation: 'nuthatch nuthatch Canada',
+    latinNameTranslation: 'nuthatch of Canada',
+  },
+  /*Winter Wren*/{
+    commonName: 'Winter Wren',
+    acceptableNames: ['Eastern Winter Wren'],
+    similarSpecies: ['Carolina Wren','White-throated Sparrow'],
+    latinName: 'Troglodytidae Troglodytes hiemalis',
+    rootWords: 'trōglodytēs trōglodytēs hiemālis',
+    rootTranslation: 'cave-dweller cave-dweller wintry',
+    latinNameTranslation: 'wintry cave-dweller',
+  },
+  /*Carolina Wren*/{
+    commonName: 'Carolina Wren',
+    acceptableNames: ['Carolina'],
+    similarSpecies: ['Winter Wren','White-throated Sparrow'],
+    latinName: 'Troglodytidae Thryothorus ludovicianus',
+    rootWords: 'trōglodytēs thryon thoros Lūdovīcus',
+    rootTranslation: 'cave-dweller reed leaping Louis',
+    latinNameTranslation: 'Louisiana reed-leaper',
+  },
+  /*Eastern Bluebird*/{
+    commonName: 'Eastern Bluebird',
+    acceptableNames: ['Bluebird'],
+    similarSpecies: ['American Robin','Purple Martin'],
+    latinName: 'Turdidae Sialia sialis',
+    rootWords: 'turdus síalis síalis',
+    rootTranslation: 'thrush sialis-bird sialis-bird',
+    latinNameTranslation: 'bluebird bluebird',
+  },
+  /*American Robin*/{
+    commonName: 'American Robin',
+    acceptableNames: ['Robin'],
+    similarSpecies: ['Eastern Bluebird','Eastern Meadowlark'],
+    latinName: 'Turdidae Turdus migratorius',
+    rootWords: 'turdus turdus migrātōrius',
+    rootTranslation: 'thrush thrush migratory',
+    latinNameTranslation: 'migratory thrush',
+  },
+  /*Gray Catbird*/{
+    commonName: 'Gray Catbird',
+    acceptableNames: ['Catbird','Grey Catbird'],
+    similarSpecies: ['Northern Mockingbird','Loggerhead Shrike'],
+    latinName: 'Mimidae Dumetella carolinensis',
+    rootWords: 'mīmus dūmētum Carolīna',
+    rootTranslation: 'mimic thicket Carolina',
+    latinNameTranslation: 'little thicket-dweller of Carolina',
+  },
+  /*Northern Mockingbird*/{
+    commonName: 'Northern Mockingbird',
+    acceptableNames: ['Mockingbird'],
+    similarSpecies: ['Loggerhead Shrike','Gray Catbird'],
+    latinName: 'Mimidae Mimus polyglottos',
+    rootWords: 'mīmus mīmus polýs glôtta',
+    rootTranslation: 'mimic mimic many tongue',
+    latinNameTranslation: 'many-tongued mimic',
+  },
+  /*Red Crossbill*/{
+    commonName: 'Red Crossbill',
+    acceptableNames: ['Crossbill','Common Crossbill'],
+    similarSpecies: ['Northern Cardinal','American Goldfinch'],
+    latinName: 'Fringillidae Loxia curvirostra',
+    rootWords: 'fringilla loxós curvus rōstrum',
+    rootTranslation: 'finch slanting curved beak',
+    latinNameTranslation: 'slanting curved-beak',
+  },
+  /*American Goldfinch*/{
+    commonName: 'American Goldfinch',
+    acceptableNames: ['Goldfinch','Wild Canary'],
+    similarSpecies: ['Hooded Warbler','Yellow-rumped Warbler'],
+    latinName: 'Fringillidae Spinus tristis',
+    rootWords: 'fringilla spīnus tristis',
+    rootTranslation: 'finch siskin sad',
+    latinNameTranslation: 'sad siskin',
+  },
+  /*White-throated Sparrow*/{
+    commonName: 'White-throated Sparrow',
+    acceptableNames: ['White throated Sparrow'],
+    similarSpecies: ['Carolina Chickadee','Eastern Meadowlark'],
+    latinName: 'Passerellidae Zonotrichia albicollis',
+    rootWords: 'passer zōnē thríx albus collum',
+    rootTranslation: 'sparrow band hair white neck',
+    latinNameTranslation: 'white-necked banded-hair',
+  },
+  /*Eastern Meadowlark*/{
+    commonName: 'Eastern Meadowlark',
+    acceptableNames: ['Meadowlark'],
+    similarSpecies: ['American Robin','Red-winged Blackbird'],
+    latinName: 'Icteridae Sturnella magna',
+    rootWords: 'íkteros sturnus -ella magnus',
+    rootTranslation: 'jaundice-bird starling little large',
+    latinNameTranslation: 'large little-starling',
+  },
+  /*Red-winged Blackbird*/{
+    commonName: 'Red-winged Blackbird',
+    acceptableNames: ['Red winged Blackbird','Redwing'],
+    similarSpecies: ['Purple Martin','American Crow'],
+    latinName: 'Icteridae Agelaius phoeniceus',
+    rootWords: 'íkteros agelaîos phoinikeos',
+    rootTranslation: 'jaundice-bird flocking crimson',
+    latinNameTranslation: 'crimson flocking-bird',
+  },
+  /*Hooded Warbler*/{
+    commonName: 'Hooded Warbler',
+    acceptableNames: ['Hooded'],
+    similarSpecies: ['American Goldfinch','Yellow-rumped Warbler'],
+    latinName: 'Parulidae Setophaga citrina',
+    rootWords: 'parula sḗs phágos citrus',
+    rootTranslation: 'little-tit moth eating lemon-yellow',
+    latinNameTranslation: 'lemon-yellow moth-eater',
+  },
+  /*Yellow-rumped Warbler*/{
+    commonName: 'Yellow-rumped Warbler',
+    acceptableNames: ['Yellow rumped Warbler','Myrtle Warbler','Butterbutt'],
+    similarSpecies: ['Hooded Warbler','American Goldfinch'],
+    latinName: 'Parulidae Setophaga coronata',
+    rootWords: 'parula sḗs phágos coronātus',
+    rootTranslation: 'little-tit moth eating crowned',
+    latinNameTranslation: 'crowned moth-eater',
+  },
+  /*Northern Cardinal*/{
+    commonName: 'Northern Cardinal',
+    acceptableNames: ['Cardinal','Redbird'],
+    similarSpecies: ['Red Crossbill','Tufted Titmouse'],
+    latinName: 'Cardinalidae Cardinalis cardinalis',
+    rootWords: 'cardinālis cardinālis cardinālis',
+    rootTranslation: 'principal principal principal',
+    latinNameTranslation: 'principal cardinal',
+  },
 ];
 
 const speciesGroups = {
   'Fish': ['Leuciscidae','Percidae','Polyodontidae','Acipenseridae','Lepisosteidae','Centrarchidae','Salmonidae','Cottidae','Ictaluridae','Catostomidae'],
-  'Frogs & Toads': ['Bufonidae','Hylidae','Microhylidae','Ranidae','Scaphiopodidae'],
+  'Frogs': ['Bufonidae','Hylidae','Microhylidae','Ranidae','Scaphiopodidae'],
   'Salamanders': ['Plethodontidae','Ambystomatidae','Salamandridae','Cryptobranchidae','Amphiumidae','Sirenidae','Proteidae'],
   'Snakes': ['Colubridae','Viperidae'],
   'Turtles': ['Trionychidae','Chelydridae','Kinosternidae','Emydidae','Cheloniidae'],
   'Lizards': ['Anguidae','Phrynosomatidae','Scincidae','Teiidae'],
+  'Birds': ['Strigidae','Tytonidae','Pandionidae','Accipitridae','Falconidae','Ardeidae','Anatidae','Picidae','Tyrannidae','Laniidae','Vireonidae','Corvidae','Hirundinidae','Paridae','Sittidae','Troglodytidae','Turdidae','Mimidae','Fringillidae','Passerellidae','Icteridae','Parulidae','Cardinalidae'],
 };
 
 // remembers which groups are collapsed, so it survives setupQuiz() re-running
@@ -1093,7 +1481,7 @@ function setupQuiz() {
     }
 
 
-    let commonName = ` ${species.commonName} <dfn data-title='Similar to: ${similarSpeciesList}'><img id='questionIcon_${species.id || '1'}' src='QuestionMarkIcon.png' alt='More information' class='smallestImage'></dfn>  <span class = 'smallText'>-</span>  `;
+    let commonName = ` ${species.commonName} <dfn data-title='Similar to: ${similarSpeciesList}'><img id='questionIcon' src='QuestionMarkIcon.png' alt='More information' class='smallestImage'></dfn>  <span class = 'smallText'>-</span>  `;
 
     option.className = 'option';
 
@@ -1166,8 +1554,7 @@ function createGroupSection(name, container) {
 
   const groupBox = document.createElement('input');
   groupBox.type = 'checkbox';
-  groupBox.className = 'checkbox orange bigCheckbox';              // reuses your checkbox style
-  // no name='quiz' on purpose, so it isn't counted as a species
+  groupBox.className = 'checkbox orange bigCheckbox';
 
   const label = document.createElement('span');
   label.className = 'groupLabel';
@@ -1274,7 +1661,9 @@ function shuffleQuestions() {
 }
 
 function setImageID(questionNum, rand, num) {
-  idName = quizData[questionNum].commonName.replace(/[\s'-]/g, "");
+  const species = quizData[questionNum];
+  idName = species.commonName.replace(/[\s'-]/g, "");
+  const groupName = getGroup(species);
 
   if (rand == true){
     idNum = Math.floor(Math.random() * 3) + 1;
@@ -1282,7 +1671,7 @@ function setImageID(questionNum, rand, num) {
     idNum = num;
   }
 
-  imageID = `${idName}/${idName}${idNum}.png`;
+  imageID = `Images/${groupName}/${idName}/${idName}${idNum}.png`;
 }
 
 function displayQuestion() {
@@ -1392,8 +1781,8 @@ function checkFirstAnswer() {
       isQuestionOne: true,
       questionNumber: currentQuestionDisplay +0.1,
       correctAnswer: quizData[currentQuestion].commonName,
-      commonName: current.commonName,
-      image:  ` Species ID -    <img id='speciesImage' src='${imageID}'' alt='Species Image' class='smallImage'>`,
+      commonNameItem: quizData[currentQuestion].commonName,
+      image:  `<img id='speciesImage' src='${imageID}'' alt='Species Image' class='smallImage'>`,
       incorrectAnswer: inputForDisplay,
       isClose: 'closeAnswer',
     });
@@ -1407,8 +1796,8 @@ function checkFirstAnswer() {
       isQuestionOne: true,
       questionNumber: currentQuestionDisplay +0.1,
       correctAnswer: quizData[currentQuestion].commonName,
-      commonName: current.commonName,
-      image:  ` Species ID -    <img id='speciesImage' src='${imageID}'' alt='Species Image' class='smallImage'>`,
+      commonNameItem: quizData[currentQuestion].commonName,
+      image:  `<img id='speciesImage' src='${imageID}'' alt='Species Image' class='smallImage'>`,
       incorrectAnswer: inputForDisplay,
       isClose: 'wrongAnswer',
     });
@@ -1502,10 +1891,7 @@ function checkSecondAnswer() {
     score++;
 
   } else {
-    // pick the image/no-image label the same way your old code did
-    const label = isGivenAnswerCorrect == 1
-      ? ` Latin name of <b>${current.commonName}</b>`
-      : ` Latin name of <b>${current.commonName}</b>    <img src='${imageID}' alt='Species Image' class='smallImage'>`;
+    const label = `<img src='${imageID}' alt='Species Image' class='smallImage'>`;
 
     incorrectAnswers.push({
       didSkip: wasSkipped,
@@ -1514,7 +1900,7 @@ function checkSecondAnswer() {
       incorrectAnswer: inputForDisplay,
       questionNumber: currentQuestionDisplay + 0.2,
       correctAnswer: current.latinName,
-      commonName: current.commonName,
+      commonNameItem: current.commonName,
       image: label,
       isClose: isPartial ? 'closeAnswer' : 'wrongAnswer',
     });
@@ -1639,8 +2025,8 @@ function createReviewItem(item) {
   arrow.className = 'groupArrow';
 
   const title = document.createElement('span');
-  const label = item.isQuestionOne ? 'Species ID' : 'Latin name';
-  label += ` ${item.commonName}`
+  let label = item.isQuestionOne ? `Species ID` : `Latin name`;
+  label += ` - <i>${item.commonNameItem}<i>`;
   title.innerHTML = ` <span class="${item.isClose}"><strong>Question ${item.questionNumber}:</strong></span> ${label}`;
 
   const body = document.createElement('div');
@@ -1648,7 +2034,7 @@ function createReviewItem(item) {
   body.style.display = 'none';                       // starts collapsed
   body.innerHTML = `
     <i>${item.image}</i><br>
-    Your Answer: ${item.didSkip ? item.incorrectAnswer : `<b>${item.incorrectAnswer}</b>`}<br>
+    ${item.didSkip ? `${item.incorrectAnswer}` : `<b>Your Answer: ${item.incorrectAnswer}</b>`}<br>
     Correct Answer: <b>${item.correctAnswer}<br></b>
   `;
 
@@ -1667,7 +2053,7 @@ function createReviewItem(item) {
 
 submitButton.addEventListener('click', checkFirstAnswer);
 secondSubmitButton.addEventListener('click', checkSecondAnswer);
-retryButton.addEventListener('click', retryQuiz);
+retryButton.addEventListener('click', fullRetry);
 showAnswerButton.addEventListener('click', showAnswer);
 nextButton.addEventListener('click',nextQuestion);
 startButton.addEventListener('click',whichAreSelected);
@@ -1675,6 +2061,10 @@ deselectButton.addEventListener('click',deselectAll);
 selectButton.addEventListener('click',selectAll);
 returnToHomeButton.addEventListener('click',retryQuiz);
 
+function fullRetry() {
+  retryQuiz();
+  whichAreSelected();
+}
 
 speciesIDInput.addEventListener('keydown', (e) => {
   if (e.key === 'Enter') {

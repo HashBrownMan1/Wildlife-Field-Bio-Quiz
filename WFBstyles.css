@@ -130,8 +130,8 @@ hr {
   float: right;
 }
 
-.red{
-  background-color: #CF4420;
+.lightGrey{
+  background-color: #adadad;
   color: #fff;
 }
 
@@ -261,7 +261,7 @@ hr {
 
 
 .button:hover {
-  filter: brightness(130%);
+  filter: brightness(120%);
   transform: scale(1.03);
   font-weight: 500;
 }
@@ -289,7 +289,7 @@ hr {
 }
 
 .smallImage {
-  height: 50px;
+  height: 80px;
   display: inline-flex;
   vertical-align: middle;
   border-radius: 5px;
